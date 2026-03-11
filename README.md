@@ -21,8 +21,8 @@ Het is aan jou om te bedenken
 
 ## Technische hulp
 Als implementatie-taal en framework zien we graag Kotlin en Spring Boot. Voor het schrijven van Kotlin raden we je sterk aan om IntelliJ IDEA te gebruiken.
+Niet iedereen is even vertrouwd met de tooling. Daarom [hier](SETUP.md) stap-voor-stap installatie-instructies om aan de slag te gaan.
 
-Om je op weg te helpen is hier een eenvoudig projectje met wat variaties op een Hello World API. Voel je vrij om deze volledig te verbouwen of zelf opnieuw te beginnen.
-Om het project te draaien voer je main functie in [VipliveLabCasusApplication](src/main/kotlin/nl/topicuszorg/viplivelab/casus/VipliveLabCasusApplication.kt) uit.
+Om je op weg te helpen is hier een eenvoudig projectje met wat variaties op een Hello World API. Voel je vrij om deze volledig te vervangen of zelf opnieuw te beginnen.
 
 Mocht je technische issues hebben met dit project aan de praat krijgen, probeer dan zelf een applicatie te bouwen. Wil dat ook niet door technische problemen, wijk dan liever uit naar een vertrouwd BE framework en taal en besteed je tijd aan het API-ontwerp.

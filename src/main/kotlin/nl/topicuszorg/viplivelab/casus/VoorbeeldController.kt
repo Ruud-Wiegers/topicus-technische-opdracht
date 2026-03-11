@@ -4,19 +4,38 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
+import java.time.LocalDate
+import java.time.LocalDateTime
 
-@RestController("/hello")
+@RestController
+@RequestMapping("/hello")
 class VoorbeeldController(
     private val helloWorldService: HelloWorldService
 )
 {
     @GetMapping("/{naam}")
-    fun helloWorld(@PathVariable naam: String, @RequestParam hoofdletters: Boolean): String
+    fun helloWorld(@PathVariable naam: String, @RequestParam(required = false) hoofdletters: Boolean = false): String
     {
         return helloWorldService.sayHello(naam, hoofdletters)
     }
+
+    @GetMapping("/moeilijkeData")
+    fun voorbeeldMetIngewikkeldeData(): VoorbeeldData
+    {
+        return VoorbeeldData(
+            "Jantje",
+            LocalDate.now(),
+            LocalDateTime.now(),
+            listOf(
+                Dingetjes("Appel", 1),
+                Dingetjes("Banaan", 2)
+            )
+        )
+    }
+
 
     @PostMapping
     fun doeIets(@RequestBody request: NaamDto)
