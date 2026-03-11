@@ -11,19 +11,22 @@ Een stap-voor-stap handleiding om het voorbeeld-project te kunnen draaien.
 1. Maak een github-account als je er nog geen hebt.
 2. Fork dit project: https://github.com/Ruud-Wiegers/topicus-technische-opdracht/fork
 
-## Stap 2 – Laad het project in IntelliJ
+## Stap 2 - Installeer een JDK
+1. Download en installeer de Java Development Kit (JDK): https://adoptium.net/ Deze is nodig om de backend te kunnen compileren en draaien.  
+
+## Stap 3 – Laad het project in IntelliJ
 1. Ga naar https://www.jetbrains.com/idea/download/ en installeer de community editie van IntelliJ.
-2. Open IntelliJ
+2. Open IntelliJ. Als het goed is vindt ie vanzelf de JDK, mogelijk moet je de installatie-map aangeven.
 3. Op het welkomstscherm of via menu: **File > New > Project from Version Control**).
 4. Vul de URL van je geforkte project in https://github.com/[jouw-account-naam]/topicus-technische-opdracht
 
-## Stap 3 - Backend starten
+## Stap 4 - Backend starten
 1. Zoek in IntelliJ het applicatie-bestand: `src/main/kotlin/nl/topicuszorg/viplivelab/casus/VipliveLabCasusApplication.kt`
 2. Klik op het groene driehoekje bij `fun main(args: Array<String>)`
 3. De applicatie is nu gestart. Als het goed is verschijnen nu allemaal logregels onderin, waaronder iets als `Started VipliveLabCasusApplicationKt in 1.23 seconds`
 4. Check of het werkt door in je browser naar http://localhost:8080/hello/jantje?hoofdletters=true te navigeren
 
-## Stap 4 – API-aanroepen testen met Postman
+## Stap 5 – API-aanroepen testen met Postman
 Je browser werkt alleen voor eenvoudige API-aanroepen. Om ingewikkeldere API-calls te testen is het praktischer een tool te gebruiken als Postman.
 1. Ga naar https://www.postman.com/downloads/ en instaleer Postman.
 2. Open Postman.
